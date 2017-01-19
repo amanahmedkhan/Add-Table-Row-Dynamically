@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Row Form</title>
+
+	<link rel="stylesheet" href="main.css">
+</head>
+	<body>
+		<main>
+			<!-- Add Form Start -->
+				<h2>Add Table Row Dynamically</h2>
+				<form action="javascript:;" onsubmit="getAddRow()" method="post">
+					<!-- Name -->
+					<label>Name</label>
+					<input type="text" name="name" class="getName">
+					<!-- Employees -->
+					<label>Employees</label>
+					<input type="text" name="employees" class="getEmployees">
+					<!-- Headoffice -->
+					<label>Head office</label>
+					<input type="text" name="headoffice" class="getOffice">
+					<input type="submit" value="Add Row">
+				</form>
+			<!-- Add Form End -->
+
+			<!-- Table Start -->
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Employees</th>
+							<th>Head Office</th>
+						</tr>
+					</thead>
+					<tbody class="rowList"></tbody>
+				</table>
+			<!-- Table Start -->
+		</main>
+	
+		<script src="script.js"></script>
+	</body>
+</html>
